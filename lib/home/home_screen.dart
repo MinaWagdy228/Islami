@@ -7,6 +7,16 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(decoration: BoxDecoration(), child: Scaffold());
+    return Stack(
+      children: [
+        Image.asset(
+          "assets/Images/quran_bg.png",
+          height: MediaQuery.sizeOf(context).height,
+        ),
+        Scaffold(
+          bottomNavigationBar: BottomNavigationBar(items: []),
+        )
+      ],
+    );
   }
 }
