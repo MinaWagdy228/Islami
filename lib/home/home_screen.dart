@@ -3,7 +3,13 @@ import 'package:islami/app_colors.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = 'home screen';
-
+  List<String> backgroundImages = [
+    'assets/Images/quran_bg.png',
+    'assets/Images/hadith_bg.png',
+    'assets/Images/sebha_bg.png',
+    'assets/Images/radio_bg.png',
+    'assets/Images/time_bg.png',
+  ];
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -48,6 +54,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           buildItemInNavigationBar(index: 3, imageName: "time"),
                       label: "Time"),
                 ]),
+          ),
+          body: Column(
+            children: [],
           ),
         )
       ],
