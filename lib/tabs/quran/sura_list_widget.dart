@@ -1,17 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:islami/model/sura_model.dart';
 
 class SuraListWidget extends StatelessWidget {
-  final int index;
-  final String englishQuranSurah;
-  final String ayaNumber;
-  final String arabicQuranSura;
+  final SuraModel suraModel;
 
-  const SuraListWidget(
-      {super.key,
-      required this.index,
-      required this.englishQuranSurah,
-      required this.ayaNumber,
-      required this.arabicQuranSura});
+  const SuraListWidget({super.key, required this.suraModel});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +19,7 @@ class SuraListWidget extends StatelessWidget {
               children: [
                 Image.asset("assets/Images/vector_image.png"),
                 Text(
-                  "$index",
+                  "${suraModel.index + 1}",
                   style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -42,14 +35,14 @@ class SuraListWidget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  englishQuranSurah,
+                  suraModel.englishSuraName,
                   style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 20),
                 ),
                 Text(
-                  "$ayaNumber Verses",
+                  "${suraModel.numOfVerses} Verses",
                   style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -60,7 +53,7 @@ class SuraListWidget extends StatelessWidget {
           ],
         ),
         Text(
-          arabicQuranSura,
+          suraModel.arabicSuraName,
           style: const TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
         ),
