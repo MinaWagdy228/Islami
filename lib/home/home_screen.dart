@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(66),
                 color: AppColors.blackBgColor),
-            padding: EdgeInsets.symmetric(vertical: 6, horizontal: 20),
+            padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 20),
             child: ImageIcon(AssetImage("assets/Images/icon_$imageName.png")))
         : ImageIcon(AssetImage("assets/Images/icon_$imageName.png"));
   }
