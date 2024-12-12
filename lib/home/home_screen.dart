@@ -37,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
           backgroundImages[selectedIndex],
           height: MediaQuery.sizeOf(context).height,
           width: MediaQuery.sizeOf(context).width,
+          fit: BoxFit.fill,
         ),
         Scaffold(
             bottomNavigationBar: Theme(

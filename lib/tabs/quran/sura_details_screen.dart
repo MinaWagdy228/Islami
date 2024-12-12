@@ -53,12 +53,16 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              SuraDetailsScreen.selectedIndex = index;
+                              SuraDetailsScreen.selectedIndex = index + 1;
+                              setState(() {});
+                            },
+                            onDoubleTap: () {
+                              SuraDetailsScreen.selectedIndex = -1;
                               setState(() {});
                             },
                             child: SuraContentItem(
                               content: verses[index],
-                              index: index,
+                              index: index + 1,
                             ),
                           );
                         },
