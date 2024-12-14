@@ -32,37 +32,43 @@ class _SebhaTabState extends State<SebhaTab> {
                 fontSize: 30,
                 fontWeight: FontWeight.bold)),
         Expanded(
-          child: Stack(alignment: Alignment.center, children: [
-            // Image.asset("assets/Images/head_of_sebha.png"),
-            AnimatedRotation(
-                duration: const Duration(milliseconds: 500),
-                turns: turns,
-                child: Center(
-                    child: GestureDetector(
-                        onTap: () {
-                          turns += 1 / 30;
-                          counter++;
-                          if (counter % 33 == 0) {
-                            currentZekr++;
-                          }
-                          setState(() {});
-                        },
-                        child: Image.asset("assets/Images/sebha_body.png")))),
-            Text(azkar[currentZekr % 5],
-                textDirection: TextDirection.rtl,
-                style: const TextStyle(
-                    color: AppColors.whiteColor,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold)),
-            Padding(
-              padding: const EdgeInsets.only(top: 100),
-              child: Text("$counter",
-                  style: const TextStyle(
-                      color: AppColors.whiteColor,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold)),
-            )
-          ]),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset("assets/Images/head_of_sebha.png"),
+              Stack(alignment: Alignment.center, children: [
+                AnimatedRotation(
+                    duration: const Duration(milliseconds: 500),
+                    turns: turns,
+                    child: Center(
+                        child: GestureDetector(
+                            onTap: () {
+                              turns += 1 / 30;
+                              counter++;
+                              if (counter % 33 == 0) {
+                                currentZekr++;
+                              }
+                              setState(() {});
+                            },
+                            child:
+                                Image.asset("assets/Images/sebha_body.png")))),
+                Text(azkar[currentZekr % 5],
+                    textDirection: TextDirection.rtl,
+                    style: const TextStyle(
+                        color: AppColors.whiteColor,
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold)),
+                Padding(
+                  padding: const EdgeInsets.only(top: 100),
+                  child: Text("$counter",
+                      style: const TextStyle(
+                          color: AppColors.whiteColor,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold)),
+                )
+              ]),
+            ],
+          ),
         ),
         Align(
           alignment: AlignmentDirectional.bottomEnd,
