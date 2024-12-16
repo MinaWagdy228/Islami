@@ -28,6 +28,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  google_fonts: ^6.2.1
+  shared_preferences: ^2.3.3
   carousel_slider: ^5.0.0
   flutter_native_splash: ^2.4.3
   flutter:
@@ -45,7 +47,22 @@ dev_dependencies:
 
 
 # The following section is specific to Flutter packages.
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
 flutter:
+  fonts:
+    - family: Janna
+      fonts:
+        - asset: assets/Fonts/Janna LT Bold.ttf
+    - family: Kamali_pg81r
+      fonts:
+        - asset: assets/Fonts/KamaliRegular-pg81r.ttf
+    - family: Kamali_xR725
+      fonts:
+        - asset: assets/Fonts/KamaliRegular-xR725.otf
   assets:
     - assets/Images/
     - assets/files/Suras/
