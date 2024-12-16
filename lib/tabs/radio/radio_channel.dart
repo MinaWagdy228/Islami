@@ -13,7 +13,6 @@ class RadioChannel extends StatefulWidget {
 
 class _RadioChannelState extends State<RadioChannel> {
   IconData heartIcon = Icons.favorite;
-
   IconData volumeIcon = Icons.volume_up;
 
   @override
