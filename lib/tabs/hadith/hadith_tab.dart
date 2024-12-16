@@ -18,7 +18,6 @@ class _HadithTabState extends State<HadithTab> {
     if (hadethList.isEmpty) {
       loadHadethFile();
     }
-    //        Image.asset("assets/Images/Logo.png"),
     return Container(
       child: Column(
         children: [
