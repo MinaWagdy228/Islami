@@ -9,8 +9,7 @@ class SuraContentItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (SuraDetailsScreen.selectedIndex == index &&
-        SuraDetailsScreen.selectedIndex != -1) {
+    if (SuraDetailsScreen.selectedIndex == index) {
       return Container(
         margin: const EdgeInsets.symmetric(horizontal: 22, vertical: 6),
         padding: const EdgeInsets.symmetric(vertical: 10),
