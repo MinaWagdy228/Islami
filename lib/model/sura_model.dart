@@ -4,6 +4,7 @@ class SuraModel {
   String numOfVerses;
   int index;
 
+  // String fileName;
   static List<String> arabicQuranSuras = [
     "الفاتحه",
     "البقرة",
@@ -352,6 +353,9 @@ class SuraModel {
     '5',
     '6'
   ];
+  static List<SuraModel> suraList = [];
+
+  /// 114
 
   SuraModel(
       {required this.arabicSuraName,
@@ -359,13 +363,13 @@ class SuraModel {
       required this.numOfVerses,
       required this.index});
 
-  static SuraModel getSuraModel(int index) {
-    return SuraModel(
-        arabicSuraName: arabicQuranSuras[index],
-        englishSuraName: englishQuranSurahs[index],
-        numOfVerses: ayaNumber[index],
-        index: index);
-  }
+  // static SuraModel getSuraModel(int index) {
+  //   return SuraModel(
+  //       arabicSuraName: arabicQuranSuras[index],
+  //       englishSuraName: englishQuranSurahs[index],
+  //       numOfVerses: ayaNumber[index],
+  //       index: index);
+  // }
 
   static int getItemCount() => arabicQuranSuras.length;
 }
