@@ -12,7 +12,6 @@ class HadethDetatilsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Stack(
-        // alignment: Alignment.topCenter,
         children: [
           Container(
               decoration: const BoxDecoration(color: AppColors.blackBgColor),
