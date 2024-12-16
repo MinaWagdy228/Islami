@@ -20,11 +20,11 @@ class SuraListWidget extends StatelessWidget {
               children: [
                 Image.asset("assets/Images/vector_image.png"),
                 Text(
-                  "${index + 1}",
+                  "${suraModel.index}",
                   style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 20),
+                      fontSize: 14),
                 )
               ],
             ),

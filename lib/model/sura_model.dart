@@ -2,9 +2,9 @@ class SuraModel {
   String arabicSuraName;
   String englishSuraName;
   String numOfVerses;
+  int index;
 
-  // int index;
-  String fileName;
+  // String fileName;
   static List<String> arabicQuranSuras = [
     "الفاتحه",
     "البقرة",
@@ -361,7 +361,7 @@ class SuraModel {
       {required this.arabicSuraName,
       required this.englishSuraName,
       required this.numOfVerses,
-      required this.fileName});
+      required this.index});
 
   // static SuraModel getSuraModel(int index) {
   //   return SuraModel(
