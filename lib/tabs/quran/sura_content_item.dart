@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:islami/app_colors.dart';
 import 'package:islami/tabs/quran/sura_details_screen.dart';
+import 'package:islami/utils/app_colors.dart';
 
 class SuraContentItem extends StatelessWidget {
   String content;

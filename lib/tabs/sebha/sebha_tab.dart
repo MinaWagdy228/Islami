@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami/app_colors.dart';
+import 'package:islami/utils/app_colors.dart';
 
 class SebhaTab extends StatefulWidget {
   static const String routeName = 'sebha_tab';

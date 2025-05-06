@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/model/hadeth_model.dart';
 
-import '../../app_colors.dart';
+import '../../utils/app_colors.dart';
 
 class HadethDetatilsScreen extends StatelessWidget {
   static const String routeName = 'hadeth_details';
